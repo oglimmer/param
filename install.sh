@@ -2,7 +2,7 @@
 
 set -eu
 
-mkdir release && cd release
+mkdir -p release && cd release
 cmake -DCMAKE_BUILD_TYPE=Release ..
 cmake --build .
 cmake --install . --config Release
